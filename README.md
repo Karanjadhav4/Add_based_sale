@@ -112,7 +112,7 @@ Example 2:
 ![first Image](https://github.com/Karanjadhav4/Add_based_sale/blob/main/Snap%20of%20the%20home.png)
 
 Example 3:
-![second Image]()
+![second Image](https://github.com/Karanjadhav4/Add_based_sale/blob/main/SnapShot%20of%20prediction.png)
 
 Example 4:
 ![third Image]()
@@ -143,5 +143,6 @@ Scikit-learn Regression
 
 Marketing Dataset Inspiration
  💾
+
 
 
