@@ -172,7 +172,7 @@ elif st.session_state.page == "about":
 
     plt.figure(figsize=(6, 4))
     plt.scatter(y, y_pred, label="all data")
-    plt.scatter(y.head(1), y_pred[0], c="green", label="actuacl valu")
+    plt.scatter(y.head(1), y_pred[0], c="green", label="actuacl value")
     plt.scatter(x1, y1_pre, c='black', label='predicted value')
     plt.xlabel("Actual Sales")
     plt.ylabel("Predicted Sales")
