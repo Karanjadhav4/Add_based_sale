@@ -166,11 +166,26 @@ elif st.session_state.page == "about":
     y = df["Sales ($)"]
     y_pred = model.predict(X)
 
-    plt.figure(figsize=(6,4))
-    plt.scatter(y, y_pred)
+    x1=np.array([[230.1,37.8,69.2]])
+    y1_pre=model.predict(x1)
+    x1=22.1
+
+    plt.figure(figsize=(6, 4))
+    plt.scatter(y, y_pred, label="all data")
+    plt.scatter(y.head(1), y_pred[0], c="green", label="actuacl valu")
+    plt.scatter(x1, y1_pre, c='black', label='predicted value')
     plt.xlabel("Actual Sales")
     plt.ylabel("Predicted Sales")
+    plt.legend()
     st.pyplot(plt)
+
+    st.write("""
+    ### 🧠 Meaning:
+    - If points are close to the diagonal → model is accurate  
+    - If scattered → model needs improvement  
+    """)
+
+
 
     if st.button("🏡 Go Home"):
         go_to("home")
