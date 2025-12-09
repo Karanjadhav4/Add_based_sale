@@ -89,6 +89,116 @@ if st.session_state.page == "home":
     ### 📌 Easy to use  
     Just enter TV, Radio, Newspaper values → Get prediction 📊  
     """)
+    import streamlit as st
+
+st.title("📘 How Multiple Linear Regression Works")
+
+st.write("### 📌 What is Multiple Linear Regression (MLR)?")
+st.write("""
+Multiple Linear Regression is a Machine Learning algorithm used to predict a numerical value 
+based on **multiple input features**.  
+In this sales prediction model, we use:
+• TV Advertising Budget  
+• Radio Advertising Budget  
+• Newspaper Advertising Budget  
+
+The model tries to understand how each of these channels affects Sales.
+""")
+
+st.write("---")
+
+st.write("### 📐 Model Equation")
+st.write("""
+Sales = b0 + b1 × TV + b2 × Radio + b3 × Newspaper
+
+Where:  
+• b0 = Intercept  
+• b1, b2, b3 = How strongly each channel impacts Sales
+""")
+
+st.write("---")
+
+st.write("### 📊 Example Dataset Used")
+st.write("""
+Here is a small example of the kind of dataset used to train the model:
+
+TV       | Radio | Newspaper | Sales  
+-------------------------------------  
+230      | 37    | 69        | 22.1  
+44       | 39    | 45        | 10.4  
+17       | 45    | 69        | 9.3   
+151      | 41    | 58        | 18.5  
+180      | 10    | 58        | 12.9  
+""")
+
+st.write("---")
+
+st.write("### 🧮 How the Model Learns")
+st.write("""
+The model finds the best values for (b0, b1, b2, b3) using a process called **Least Squares**.
+It tries to minimize the difference between:
+
+• Actual Sales  
+• Predicted Sales  
+
+This gives the model the best-fitting line (or plane in 3D).
+""")
+
+st.write("---")
+
+st.write("### 🔍 Coefficients Meaning")
+st.write("""
+• If b1 is high → TV has a strong impact  
+• If b2 is low → Radio has weak effect  
+• If b3 is negative → Newspaper may reduce sales  
+
+These values explain **how much each feature contributes**.
+""")
+
+st.write("---")
+
+st.write("### 💡 Example Prediction: How the Model Calculates Sales")
+st.write("""
+Let’s say:
+
+TV = 100  
+Radio = 50  
+Newspaper = 20  
+
+Prediction happens like this:
+
+Sales = b0 + b1 × 100 + b2 × 50 + b3 × 20
+""")
+
+st.write("""
+The final number is the **predicted Sales value**.
+""")
+
+st.write("---")
+
+st.write("### 📏 Model Performance Metrics")
+st.write("""
+Some common metrics used to judge the model:
+
+• R² Score – tells how well the model fits the data  
+• MSE (Mean Squared Error) – lower = better  
+""")
+
+st.write("---")
+
+st.write("### 📉 Final Summary")
+st.write("""
+Multiple Linear Regression helps us understand:
+
+✔ How each marketing channel affects Sales  
+✔ Which channels give the best return  
+✔ How to allocate budget to increase profit  
+✔ How to predict future sales instantly  
+
+This is the exact model used in your Streamlit Sales Predictor.
+""")
+
+st.write("🎉 **You now understand how the model works!**")
 
     if st.button("🚀 Get Started"):
         go_to("appp")
