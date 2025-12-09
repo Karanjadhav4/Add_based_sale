@@ -70,7 +70,7 @@ Make sure you have Python 3.11+ installed
 
 Clone this repository:
 
-git clone https://github.com/yourusername/ai-sales-predictor.git
+git clone https://github.com/Karanjadhav4/Add_based_sale.git
 cd ai-sales-predictor
 
 
@@ -100,23 +100,22 @@ Extend ML model with new datasets
 
 Example 1:
 
-TV Budget: 300
+TV Budget: 100
 
-Radio Budget: 200
+Radio Budget: 100
 
-Newspaper Budget: 150
+Newspaper Budget: 100
 
-Predicted Sales: 450 units 📦
+Predicted Sales: 26.26 units 📦
 
 Example 2:
+![first Image]()
 
-TV Budget: 1000
+Example 3:
+![second Image]()
 
-Radio Budget: 400
-
-Newspaper Budget: 200
-
-Predicted Sales: 1200 units 📈
+Example 4:
+![third Image]()
 
 💌 Feedback & Contribution
 
@@ -144,3 +143,4 @@ Scikit-learn Regression
 
 Marketing Dataset Inspiration
  💾
+
