@@ -233,7 +233,7 @@ elif st.session_state.page == "appp":
 # =========================================================
 elif st.session_state.page == "about":
 
-    st.markdown('<div class="glass-box"><h1><center>⚡ Developed by <b>Karan Jadhav</b></h1></center>', unsafe_allow_html=True)
+    st.markdown('<div class="glass-box"><h1><center>⚡ Developed by <b>Mr.Karan Jadhav</b></h1></center>', unsafe_allow_html=True)
 
     st.title("📘 About the Sales Prediction Model")
 
