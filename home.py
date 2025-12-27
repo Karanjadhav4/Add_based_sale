@@ -219,7 +219,7 @@ elif st.session_state.page == "appp":
 
     if st.button("🔮 Predict Sales"):
         input_data = np.array([[tv, radio, newspaper]])
-        result = float(model.predict(input_data)[0])
+        result = np.float(model.predict(input_data)[0])
         st.success(f"✨ Predicted Sales: **{result:.2f} units**")
 
     if st.button("🏡 Go Home"):
